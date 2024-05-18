@@ -15,7 +15,7 @@ This dashboard provides an analysis of survey data on screen time, sleep pattern
 # Load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r'C:\Users\khand\arfan\Screen Time Analysis Survey.csv', encoding='unicode_escape')
+    df = pd.read_csv(r'Screen Time Analysis Survey.csv')
     df.drop(['Timestamp'], axis=1, inplace=True)
     df.rename(columns={
         'What is your age?':'Age', 
